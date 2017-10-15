@@ -4,7 +4,7 @@ GraphqlRubySampleSchema = GraphQL::Schema.define do
 
   use GraphQL::Batch
   max_depth 12
-  max_complexity 100
+  max_complexity 1000
 end
 
 GraphqlRubySampleSchema.middleware << GraphQL::Schema::TimeoutMiddleware.new(max_seconds: 10) do |err, query|
