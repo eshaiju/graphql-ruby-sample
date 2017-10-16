@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 source 'https://rubygems.org'
 
 git_source(:github) do |repo_name|
@@ -55,3 +57,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "graphql"
 gem 'graphiql-rails', group: :development
 gem 'graphql-batch'
+gem 'graphql-preload'
