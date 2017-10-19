@@ -4,7 +4,7 @@ class GraphqlController < ApplicationController
     query = params[:query]
     context = {
       # Query context goes here, for example:
-      # current_user: current_user,
+      optics_agent: request.env[:optics_agent].with_document(query)
     }
     result = GraphqlRubySampleSchema.execute(query, variables: variables, context: context)
     render json: result

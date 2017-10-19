@@ -5,5 +5,6 @@ UserType = GraphQL::ObjectType.define do
   field :email, types.String
   field :comments, types[CommentType] do
     preload :comments
+    #resolve -> (user, args, ctx) { Comment.where(user_id: user.id) }
   end
 end

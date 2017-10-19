@@ -58,3 +58,6 @@ gem "graphql"
 gem 'graphiql-rails', group: :development
 gem 'graphql-batch'
 gem 'graphql-preload'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'optics-agent'
+gem 'bullet', group: 'development'
