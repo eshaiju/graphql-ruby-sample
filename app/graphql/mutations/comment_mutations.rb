@@ -4,9 +4,6 @@ module CommentMutations
     name 'AddComment'
 
     # Define input parameters
-    # input_field :articleId, !types.ID
-    # input_field :userId, !types.ID
-    # input_field :comment, !types.String
     input_field :comment, !CommentInputObjectType
 
     # Define return parameters
@@ -33,7 +30,6 @@ module CommentMutations
     # Define input parameters
     input_field :id, !types.ID
     input_field :comment, !CommentInputObjectType
-
 
     # Define return parameters
     return_field :comment, CommentType
